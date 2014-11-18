@@ -1,0 +1,59 @@
+$one: rgba(255, 251, 209, .1);
+$two: rgba(253, 241, 79, .2);
+$three: rgba(255, 221, 72, .3);
+$four: rgba(255, 201, 67, .4);
+$five: rgba(255, 183, 64, .5);
+$six: rgba(251, 147, 58, .6);
+$seven: rgba(250, 128, 55, .7);
+$eight: rgba(247, 86, 48, .8);
+$nine: rgba(245, 61, 45, .9);
+$ten: #F3132B;
+body{
+  background-color:white;
+  text-align:center;
+}
+.sunshine{
+  margin:10%;
+  display:inline-block;
+  height:100px;
+  width:100px;
+  border-radius:100%;
+  background-color:white;
+
+  &:nth-child(1){
+    -webkit-animation: shine 3s infinite;
+  }
+  &:nth-child(2){
+    -webkit-animation: shine 4s infinite;
+  }
+  &:nth-child(3){
+    z-index:5;
+    -webkit-animation: shine 6s infinite;
+  }
+  &:nth-child(4){
+    z-index:4;
+    -webkit-animation: shine 5s infinite;
+  }
+  &:nth-child(5){
+    z-index:6;
+    -webkit-animation: shine 7s infinite;
+  }
+  &:nth-child(6){
+    -webkit-animation: shine 3s infinite;
+  }
+
+
+}
+@-webkit-keyframes shine {
+  10%{box-shadow:0 0 0 50px $one}
+  20%{box-shadow:0 0 0 50px $one, 0 0 0 100px $two}
+  30%{box-shadow:0 0 0 50px $one, 0 0 0 100px $two, 0 0 0 150px $three}
+  40%{box-shadow:0 0 0 50px $one, 0 0 0 100px $two, 0 0 0 150px $three, 0 0 0 200px $four}
+  50%{box-shadow:0 0 0 50px $one, 0 0 0 100px $two, 0 0 0 150px $three, 0 0 0 200px $four, 0 0 0 250px $five}
+  60%{box-shadow:0 0 0 50px $one, 0 0 0 100px $two, 0 0 0 150px $three, 0 0 0 200px $four, 0 0 0 250px $five, 0 0 0 300px $six}
+  70%{box-shadow:0 0 0 50px $one, 0 0 0 100px $two, 0 0 0 150px $three, 0 0 0 200px $four, 0 0 0 250px $five, 0 0 0 300px $six, 0 0 0 350px $seven}
+  80%{box-shadow:0 0 0 50px $one, 0 0 0 100px $two, 0 0 0 150px $three, 0 0 0 200px $four, 0 0 0 250px $five, 0 0 0 300px $six, 0 0 0 350px $seven, 0 0 0 400px $eight}
+  90%{box-shadow:0 0 0 50px $one, 0 0 0 100px $two, 0 0 0 150px $three, 0 0 0 200px $four, 0 0 0 250px $five, 0 0 0 300px $six, 0 0 0 350px $seven, 0 0 0 400px $eight, 0 0 0 450px $nine}
+  100%{box-shadow:0 0 0 50px $one, 0 0 0 100px $two, 0 0 0 150px $three, 0 0 0 200px $four, 0 0 0 250px $five, 0 0 0 300px $six, 0 0 0 350px $seven, 0 0 0 400px $eight, 0 0 0 450px $nine, 0 0 0 500px $ten}
+
+}
